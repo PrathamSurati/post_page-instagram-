@@ -41,9 +41,7 @@ app.get("/test", (req, res) => {
 });
 
 app.post("/upload", upload.single("image"), (req, res) => {
-  console.log('====================================');
   console.log(req.file);
-  console.log('====================================');
 });
 
 app.get("/login", (req, res) => {
